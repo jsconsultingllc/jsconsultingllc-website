@@ -1,22 +1,22 @@
 backend:
   name: git-gateway
-    branch: main
+  branch: main
 
 media_folder: images
 public_folder: /images
 
 collections:
   - name: pages
-      label: Pages
-          files:
-                - name: home
-                        label: Home Page
-                                file: _data/home.json
-                                        fields:
-                                                  - {label: Hero Title, name: hero_title, widget: string}
-                                                            - {label: Hero Subtitle, name: hero_subtitle, widget: text}
-                                                                      - {label: About Title, name: about_title, widget: string}
-                                                                                - {label: About Text, name: about_text, widget: text}
-                                                                                          - {label: Contact Email, name: contact_email, widget: string}
-                                                                                                    - {label: Phone, name: phone, widget: string}
-                                                                                                              - {label: Company Name, name: company_name, widget: string}
+    label: Pages
+    files:
+      - name: home
+        label: Home Page
+        file: _data/home.json
+        fields:
+          - {label: Hero Title, name: hero_title, widget: string}
+          - {label: Hero Subtitle, name: hero_subtitle, widget: text}
+          - {label: About Title, name: about_title, widget: string}
+          - {label: About Text, name: about_text, widget: text}
+          - {label: Contact Email, name: contact_email, widget: string}
+          - {label: Phone, name: phone, widget: string}
+          - {label: Company Name, name: company_name, widget: string}
